@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="littleblue.com.qrtest.MainActivity">
+
+    <Button
+        android:id="@+id/button_open_camera"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="Open Camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button_open_scan"
+        android:layout_marginTop="158dp"/>
+
+    <Button
+        android:id="@+id/button_open_scan"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:text="Open scan"
+        android:layout_below="@+id/button_open_camera"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="31dp"/>
+</RelativeLayout>
