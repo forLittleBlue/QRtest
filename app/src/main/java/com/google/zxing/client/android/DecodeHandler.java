@@ -95,6 +95,7 @@ final class DecodeHandler extends Handler {
 
     Handler handler = activity.getHandler();
     if (rawResult != null) {
+      Log.i("XQY."+TAG, "decode rawResult: " + rawResult);
       // Don't log the barcode contents for security.
       long end = System.currentTimeMillis();
       Log.d(TAG, "Found barcode in " + (end - start) + " ms");
@@ -106,6 +107,7 @@ final class DecodeHandler extends Handler {
         message.sendToTarget();
       }
     } else {
+      Log.i("XQY."+TAG, "decode failed");
       if (handler != null) {
         Message message = Message.obtain(handler, R.id.decode_failed);
         message.sendToTarget();
